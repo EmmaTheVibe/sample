@@ -123,12 +123,12 @@ body{
     position: relative;
     transition: cubic-bezier(.03,1.11,.96,1.12) 1s;
 }
-.show-hero .iphone-top{
+/* .show-hero .iphone-top{
     transform: translateY(-9rem);
 }
 .show-hero .menu{
     transform: translateY(-4.3rem);
-}
+} */
 
 
 .features{
