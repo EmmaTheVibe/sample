@@ -43,8 +43,8 @@ body{
 
 .hero{
     width: 100%;
-    padding-top: 14rem;
-    min-height: 108vh;
+    /* padding-top: 14rem; */
+    min-height: 105vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -67,7 +67,7 @@ body{
     opacity: .9;
 }
 .init-txt{
-    /* margin: auto; */
+    margin: auto;
     height: 14rem;
     width: 95%;
     text-align: center;
