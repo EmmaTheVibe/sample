@@ -173,7 +173,7 @@ body{
     flex-direction: row;
     justify-content: space-between;
 }
-.link1, .link2, .link3{
+.btn{
     width: 30%;
     height: 2.063rem;
     color: #121212;
