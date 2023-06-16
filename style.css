@@ -43,8 +43,8 @@ body{
 
 .hero{
     width: 100%;
-    padding-top: 8rem;
-    min-height: 115vh;
+    padding-top: 14rem;
+    min-height: 108vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -67,7 +67,7 @@ body{
     opacity: .9;
 }
 .init-txt{
-    margin: auto;
+    /* margin: auto; */
     height: 14rem;
     width: 95%;
     text-align: center;
@@ -78,7 +78,7 @@ body{
     margin-top: 25rem;
     font-style: normal;
     font-weight: 500;
-    font-size: 2.3rem;
+    font-size: 2.7rem;
     line-height: 3rem;
     color: #FFFFFF;
     transition: cubic-bezier(.03,1.11,.96,1.13) 1.3s;
@@ -767,7 +767,15 @@ input{
     .download{
         margin-right: 3rem;
     }
-
+    
+    .hero{
+        height: unset;
+        justify-content: center;
+        padding-top: 8rem;
+    }
+    .top-display{
+        margin-top: 10rem;
+    }
     .iphone-top{
         width: 18rem;
         height: 18rem;
@@ -867,7 +875,7 @@ input{
         width: 40rem;
     }
     .init-txt h3{
-        font-size: 2.938rem;
+        font-size: 3.8rem;
         line-height: 3.875rem;
     }
     .init-txt p{
@@ -891,6 +899,10 @@ input{
         transform: translateY(-8.3rem);
     }
 
+    .show-ft .iphone{
+        opacity: 1;
+        transform: scale(1.2, 1.2);
+    }
 
     .hd{
         font-size: 0.8rem;
