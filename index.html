@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yurwallet</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Nunito:wght@200;300;400;500;700&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 px-3 fixed-top">
+        <img src="images\logo.png" alt="" class="logo">
+        <a href="#download-box"><button class="download">Download Now</button></a>
+    </nav>
+        <section class="hero">
+            <div class="init-txt">
+                <h3>Go Cashless with <br>confidence.</h3>
+                <p>Send and receive money quickly and easily, with no hassles or delays.</p>
+            </div>
+            <div class="sample">
+                <img src="images\topdisplay2.png" alt="" class="iphone-top">
+                <img src="images\menu2.png" alt="" class="menu">
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="ft-box">
+                <h3>Our amazing features</h3>
+                <div class="link-cont">
+                    <button onclick= "receive()" class="btn link1 clicked">Receive</button>
+                    <button onclick= "transfer()" class="btn link2">Transfer</button>
+                    <button onclick= "fund()" class="btn link3">Fund Wallet</button>
+                </div>
+                <h4 class="heading">Receive Money</h4>
+                <div class="content">
+                    <p class="prg">Say goodbye to complicated payment methods and delays. Now, you can easily receive money instantly from anyone, anywhere. Simplify your payment collection with YurWallet using a unique account ID created.</p>
+                    <div class="apps">
+                        <div class="appstore">
+                            <img src="images\apple.svg" alt="">
+                            <a href=""><span>Download on the</span><br>App Store</a>
+                        </div>
+                        <div class="playstore">
+                            <img src="images\playstr.svg" alt="">
+                            <a href=""><span>Download on</span><br>Google Play</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="boxx">
+                <img src="images\receive.png" alt="" class="iphone">
+            </div>
+        </section>
+
+        <section class="more-details">
+            <h3>How to create account</h3>
+            <div class="guide">
+                <div class="bvnbox">
+                    <img src="images\bvn.png" alt="" class="bvn">
+                    <div class="bvn-txt">
+                        <p class="hd">Verify Bvn</p>
+                        <p class="txt">Launch the downloaded application,<br> tap the "Create account" button, input<br> your BVN and validate the BVN<br> information provided.</p>
+                    </div>
+                </div>
+                <div class="otpbox">
+                    <div class="otp-txt">
+                        <p class="hd">Verify Details With OTP</p>
+                        <p class="txt">Tap the "Continue" button to create a<br> password for your account login and<br> enter the four-digit OTP sent to your<br> registered phone number.</p>
+                    </div>
+                    <img src="images\otp.png" alt="" class="otp">
+                </div>
+                <div class="pinbox">
+                    <img src="images\pin.png" alt="" class="pin">
+                    <div class="pin-txt">
+                        <p class="hd">Set A Transaction PIN</p>
+                        <p class="txt">You will be required to create a four-<br>digit transaction PIN for your account.<br> Once that is completed, proceed to<br> the YurWallet home page.</p>
+                    </div>
+                </div>
+            </div>
+            <h3>Some Friends</h3>
+            <div class="companies">
+                <div class="comp">
+                    <img src="images\swipe.png" alt="" class="swipe">
+                    <img src="images\parkway.svg" alt="" class="pkw">
+                </div>
+                <div class="comp">
+                    <img src="images\bank3d.png" alt="" class="bank3d">
+                    <img src="images\readycash.png" alt="" class="readycash">
+                </div>
+            </div>
+        </section>
+
+        <section class="ad-box">
+            <div class="formbox">
+                <div class="vidbox">
+                    <video autoplay muted loop src="images\video.mp4"></video>
+                    <p>Say Hello <br><span>0700007275929</span></p>
+                </div>
+                <form action="">
+                    <label for="full-name">
+                        Full name
+                        <input placeholder="Enter your name" id="full-name" type="text" name="full-name" required>
+                    </label>
+                    <label for="email">
+                        Email
+                        <input placeholder="Enter your email address" id="email" type="email" name="email" required>
+                    </label>
+                    <label for="message">
+                        Message 
+                        <textarea id="message" rows="3" cols="30" name="message" placeholder="Type here..."></textarea>
+                    </label>
+                    <button type="submit" id="submit">Send</button>
+                </form>
+            </div>
+            <div id="download-box" class="download-box">
+                <h3>Download now and enjoy <br>seamless transaction at your <br>finger tip.</h3>
+                <div class="apps2">
+                    <div class="appstore2">
+                        <img src="images\apple2.svg" alt="">
+                        <a href=""><span>Download on the</span><br>App Store</a>
+                    </div>
+                    <div class="playstore2">
+                        <img src="images\playstr.svg" alt="">
+                        <a href=""><span>Download on</span><br>Google Play</a>
+                    </div>
+                </div>
+           </div>
+        </section>
+
+        
+        <section class="footer">
+            <div class="yurline">
+                <img src="images/logo.png" alt="" class="logo2">
+                <div class="contact">
+                    <a href="#">Home</a>
+                    <a href="#">Features</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="socials">
+                    <img src="./images/fb.svg" alt="" class="fb">
+                    <img src="./images/ig.svg" alt="" class="">
+                    <img src="./images/twitter.svg" alt="">
+                    <img src="./images/linkedin.svg" alt="">
+                </div>
+            </div>
+            <div class="cpy-line">
+                <a href="">2023 Yurwallet. All right reserved.</a>
+                <a href="">Privacy Policy</a>
+                <a href="">Terms of Service</a>
+            </div>
+        </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
