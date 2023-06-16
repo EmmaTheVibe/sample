@@ -44,7 +44,7 @@ body{
 .hero{
     width: 100%;
     /* padding-top: 14rem; */
-    min-height: 105vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
