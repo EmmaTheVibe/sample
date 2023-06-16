@@ -146,9 +146,10 @@ body{
     width: 95%;
     padding-top: 3%;
     padding-right: 5px;
-    margin-bottom: 1rem;
+    /* margin-bottom: 10px; */
     display: flex;
     flex-direction: column;
+    border: 1px solid green;
 }
 .content{
     height: 12rem;
@@ -274,6 +275,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 2rem;
     margin-bottom: 2rem;
 }
 .iphone{
