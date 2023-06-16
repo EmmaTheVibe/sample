@@ -43,7 +43,7 @@ body{
 
 .hero{
     width: 100%;
-    padding-top: 13rem;
+    padding-top: 16rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -76,7 +76,7 @@ body{
     margin-top: 25rem;
     font-style: normal;
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 2.3rem;
     line-height: 3rem;
     color: #FFFFFF;
     transition: cubic-bezier(.03,1.11,.96,1.13) 1.3s;
