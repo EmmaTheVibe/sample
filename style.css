@@ -190,7 +190,7 @@ body{
     background-color: #F9956B;
     color: #FFFFFF;
 }
-.clicked{
+.btn.clicked{
     background-color: #F9956B;
     color: #FFFFFF;
 }
