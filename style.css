@@ -43,7 +43,7 @@ body{
 
 .hero{
     width: 100%;
-    padding-top: 16rem;
+    padding-top: 8rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -932,5 +932,10 @@ input{
     }
     .download{
         margin-right: 22rem;
+    }
+}
+@media screen and(max-height:700px){
+    .init-txt{
+        color: red
     }
 }
