@@ -19,13 +19,12 @@ body{
     height: 60px;
     display: flex;
     justify-content: space-between;
+}
+.navbar.scrolled {
     background:#121212;
 }
-/* .navbar.scrolled {
-    background:#121212;
-} */
 .logo{
-    height: 1.875rem;
+    height: 1.8rem;
 }
 .download{
     width: 6.563rem;
@@ -35,7 +34,7 @@ body{
     border-radius: 0.5rem;
     font-family: 'Manrope';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 0.625rem;
     line-height: 0.938rem;
     color: #FFFFFF;
@@ -97,7 +96,7 @@ body{
 .show-hero .init-txt p{
     transform: translateY(-23rem);
 }
-.sample{
+.top-display{
     height: 15rem;
     width: 100%;
     padding-left: 1.5rem;
@@ -138,8 +137,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(./images/featuresbkg.svg);
-    background-size: cover;
+    background: linear-gradient(120deg, rgba(18,18,18,0.14) 0%, rgba(249,149,107,0.14) 35%, rgba(241,219,141,0.22) 100%);
     /* background-position: center; */
 }
 .ft-box{
@@ -173,12 +171,12 @@ body{
     flex-direction: row;
     justify-content: space-between;
 }
-.btn{
+.link1, .link2, .link3{
     width: 30%;
     height: 2.063rem;
     color: #121212;
     background: none;
-    border: 1px solid #F9956B;
+    border: 1.5px solid #F9956B;
     border-radius: 0.5rem;
     font-family: "Manrope", sans-serif;
     font-style: normal;
@@ -190,7 +188,7 @@ body{
     background-color: #F9956B;
     color: #FFFFFF;
 }
-.btn.clicked{
+.clicked{
     background-color: #F9956B;
     color: #FFFFFF;
 }
@@ -270,17 +268,19 @@ body{
     font-size: 0.375rem;
     line-height: 0.563rem;
 }
-.boxx{
+.ft-display{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 2rem;
 }
 .iphone{
-    width: 10rem;
+    width: 9rem;
     transition: ease-in-out .4s;
+    opacity: 0.3;
 }
 .show-ft .iphone{
+    opacity: 1;
     transform: scale(1.2, 1.2);
 }
 
@@ -474,28 +474,15 @@ body{
     line-height: 1.6;
     color: #FFFFFF;
 }
-.companies{
-    width: 14rem;
-    display: flex;
-    flex-direction: column;
+.friends{
+    max-width: 37rem;
+    display: none;
 }
-.comp{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
+.friends2{
+    max-width: 14rem;
+}
 
-}
-.swipe, .bank3d{
-    max-width: 6rem;
-}
-.pkw{
-    width: 7rem;
-}
-.readycash{
-    width: 7rem;
-}
+
 
 .ad-box{
     width: 100%;
@@ -511,7 +498,7 @@ body{
     flex-direction: column;
     margin-top: 0;
     grid-column: span 2;
-    height: 32rem;
+    height: 33.5rem;
     width: 17rem;
     margin-bottom: 3rem;
     border-radius: 1rem;
@@ -563,46 +550,51 @@ form{
 }
 label{
     width: 80%;
-    margin-bottom: 0.5rem;
+    margin-bottom: 10px;
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 500;
-    font-size: 0.58rem;
+    font-size: 0.7rem;
     line-height: 0.938rem;
     color: #121212;
 }
 input{
+    margin-top: 5px;
     width: 100%;
     height: 2.5rem;
     font-family: 'Manrope';
     font-style: normal;
-    font-weight: 500;
-    font-size: 0.58rem;
+    font-weight: 400;
+    font-size: 0.7rem;
     line-height: 0.938rem;
-    padding-left: 0.3rem;
-    padding-right: 0.3rem;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
     border: 1px solid #E6E6E6;
+    border-radius: 4px;
 }
 #message{
     width: 100%;
     height: 3.5rem;
+    margin-top: 5px;
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 500;
     font-size: 0.58rem;
     line-height: 0.938rem;
     text-align: start;
-    padding-left: 0.3rem;
-    padding-right: 0.3rem;
+    padding-top: 0.5rem;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
     border: 1px solid #E6E6E6;
+    border-radius: 4px;
 }
 #submit{
-    width: 75%;
-    height: 4em;
+    width: 80%;
+    height: 2.5rem;
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 500;
-    font-size: 0.58rem;
+    font-size: 0.7rem;
     line-height: 0.938rem;
     color: #FFFFFF;
     background-color: #F9956B;
@@ -610,7 +602,7 @@ input{
     border-radius: 0.5rem;
 }
 .download-box{
-    height: 20rem;
+    height: 12rem;
     width: 17rem;
     display: flex;
     flex-direction: column;
@@ -623,7 +615,6 @@ input{
     border-radius: 1.5rem;
     position: relative;
     isolation: isolate;
-    margin-top: 3%;
 }
 .download-box::after{
     content: '';
@@ -633,10 +624,6 @@ input{
     background: #121212;
     opacity: .5;
     border-radius: 1.5rem;
-}
-.ad-txt{
-    width: 70%;
-    height: fit-content;
 }
 .download-box h3{
     font-family: myFont;
@@ -650,7 +637,6 @@ input{
 .apps2{
     height: fit-content;
     width: 12.25rem;
-    margin-top: 3%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -709,20 +695,19 @@ input{
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
-.yurline{
+.connect{
     width: 17rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-bottom: 0.063rem solid white;
-    width: 17rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 1rem;
     margin-bottom: 1rem;
 }
 .logo2{
-    height: 1.2rem;
-    margin-bottom: 4px;
+    height: 1rem;
+    margin-bottom: 13px;
 }
 .contact{
     width: 12rem;
@@ -755,14 +740,14 @@ input{
     line-height: 0.563rem;
     color: #FFFFFF;
 }
-.cpy-line{
+.docs{
     width: 17rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.cpy-line a{
+.docs a{
     font-family: 'Manrope', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -810,21 +795,18 @@ input{
     .bvnbox, .otpbox{
         margin-right: 0.5rem;
     }
-    .companies{
-        width: 40rem;
-        flex-direction: row;
-        justify-content: space-evenly;
+    .friends{
+        display: unset;
     }
-    .comp{
-        width: 15rem;
-        justify-content: space-between;
+    .friends2{
+        display: none;
     }
 
 
     .formbox{
         flex-direction: row;
         width: 40rem;
-        height: 17rem;
+        height: 20.5rem;
         border-radius: 1rem;
     }
     .vidbox{
@@ -843,26 +825,30 @@ input{
     form{
         width: 50%;
         height: 100%;
+        padding-top: 2rem;
         border-radius: 0;
     }
     .download-box{
         height: 13.5rem;
         width: 40rem;
+        margin-top: 2rem;
     }
 
-    .yurline{
+    .connect{
         width: 40rem;
+        margin-bottom: 2rem;
         flex-direction: row;
         justify-content: space-between;
     }
     .logo2{
-        display: unset;
+        margin-bottom: unset;
     }
-    .cpy-line{
-        width: 40rem;
+    .docs{
+        width: 30rem;
         flex-direction: row;
+        justify-content: space-between;
     }
-    .cpy-line a{
+    .docs a{
         margin-right: 1em;
     }
 }

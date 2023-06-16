@@ -1,9 +1,9 @@
-// $(function () {
-//     $(document).scroll(function () {
-//         const $nav = $("#mainNavbar");
-//         $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
-//     });
-// });
+$(function () {
+    $(document).scroll(function () {
+        const $nav = $("#mainNavbar");
+        $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+    });
+});
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -52,6 +52,8 @@ buttons.forEach(active => {
     })
 })
 function receive(){
+    const img1 = document.querySelector(".iphone")
+    img1.setAttribute('src', "images/receive.png") 
     
     const transferText = document.querySelector(".heading")
     transferText.innerText = "Receive Money"
@@ -61,6 +63,9 @@ function receive(){
 }
 
 function transfer(){
+    const img2 = document.querySelector(".iphone")
+    img2.setAttribute('src', "images/transfer.png")
+
     const transferText = document.querySelector(".heading")
     transferText.innerText = "Transfer Money"
     
@@ -69,6 +74,9 @@ function transfer(){
 }
 
 function fund(){
+    const img3 = document.querySelector(".iphone")
+    img3.setAttribute('src', "images/fund.png")
+
     const transferText = document.querySelector(".heading")
     transferText.innerText = "Fund Wallet"
     
