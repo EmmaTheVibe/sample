@@ -768,12 +768,12 @@ input{
     }
     
     .hero{
-        height: unset;
-        justify-content: center;
-        padding-top: 8rem;
+        height: 105vh;
+        /* justify-content: center;
+        padding-top: 8rem; */
     }
     .top-display{
-        margin-top: 10rem;
+        margin-top: 5rem;
     }
     .iphone-top{
         width: 18rem;
