@@ -768,12 +768,12 @@ input{
     }
     
     .hero{
-        height: 105vh;
-        /* justify-content: center;
-        padding-top: 8rem; */
+        height: unset;
+        justify-content: center;
+        padding-top: 8rem;
     }
     .top-display{
-        margin-top: 5rem;
+        margin-top: 10rem;
     }
     .iphone-top{
         width: 18rem;
@@ -794,7 +794,7 @@ input{
     }
     .ft-box{
         width: 30rem;
-        margin-right: 2rem;
+        margin-right: 1rem;
     }
     .guide{
         flex-direction: row;
