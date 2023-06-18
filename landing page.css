@@ -827,6 +827,11 @@ input{
         border-top-left-radius: 1rem;
         border-bottom-left-radius: 1rem;
     }
+    .gif{
+        border-radius: 0;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+    }
     .vidbox p{
         margin: 2.1rem;
     }
