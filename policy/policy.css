@@ -35,18 +35,14 @@ body{
 }
 
 .download{
-    /* background-color: #F9956B; */
     border: none;
     border-radius: 0.5rem;
-    /* width: 6.563rem;
-    height: 1.875rem; */
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 800;
-    /* font-size: 0.625rem; */
     font-size: 14px;
     line-height: 0.938rem;
-    /* color: #F9956B; */
+    color: #F9956B;
 }
 
 .bgimg{

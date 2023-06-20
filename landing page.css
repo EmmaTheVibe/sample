@@ -17,9 +17,19 @@ body{
 
 .navbar{
     height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+}
+.nav-items{
+    width: 96.5%;
     display: flex;
     justify-content: space-between;
-    background:#121212;
 }
 .logo{
     height: 1.8rem;
@@ -173,7 +183,7 @@ body{
     height: 2.063rem;
     color: #121212;
     background: none;
-    border: 1.5px solid #F9956B;
+    border: none;
     border-radius: 0.5rem;
     font-family: "Manrope", sans-serif;
     font-style: normal;
@@ -287,7 +297,7 @@ body{
 .more-details{
     width: 100%;
     padding-top: 4rem;
-    padding-bottom: 3rem;
+    padding-bottom: 4rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -295,7 +305,7 @@ body{
     background: #FFFFFF;
 }
 .more-details h3{
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     font-family: myFont;
     font-style: normal;
     font-weight: 500;
@@ -309,7 +319,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
 }
 .bvnbox{
     width: 13.125rem;
@@ -489,7 +499,7 @@ body{
     justify-content: center;
     align-items: center;
     background-color: #FFFFFF;
-    padding-bottom: 3rem;
+    padding-bottom: 4rem;
 }
 .formbox{
     display: flex;
@@ -498,7 +508,7 @@ body{
     grid-column: span 2;
     height: 33.5rem;
     width: 17rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     border-radius: 1rem;
     border: 0.719528px solid #E6E6E6;;
     box-shadow: 0rem 2.5rem 2.5rem 0.313rem rgba(0, 0, 0, 0.12);
@@ -758,13 +768,6 @@ input{
 
 
 @media screen and (min-width:650px){
-    .logo{
-        margin-left: 3rem;
-    }
-    .download{
-        margin-right: 3rem;
-    }
-    
     .hero{
         height: unset;
         justify-content: center;
@@ -861,15 +864,23 @@ input{
     }
 }
 
+@media screen and (min-width:750px){
+    .nav-items{
+        width: 43.2rem;
+    }
+
+    .formbox{
+        width: 43rem;
+    }
+    .download-box{
+        width: 43rem;
+    }
+    .connect{
+        width: 43rem;
+    }
+}
 
 @media screen and (min-width:950px){
-    .logo{
-        margin-left: 15rem;
-    }
-    .download{
-        margin-right: 15rem;
-    }
-
     .init-txt{
         width: 40rem;
     }
@@ -902,7 +913,14 @@ input{
         opacity: 1;
         transform: scale(1.2, 1.2);
     }
-
+    
+    .bvnbox{
+        margin-right: unset;
+    }
+    .otpbox{
+        margin-left: 1.8rem;
+        margin-right: 1.8rem;
+    }
     .hd{
         font-size: 0.8rem;
         line-height: 0.313rem;
@@ -926,18 +944,14 @@ input{
         padding-top: 7rem;
         padding-bottom: 4rem;
     }
-
+    
+    .ad-box{
+        padding-bottom: 7rem;
+    }
     .download-box h3{
         font-size: 1.5rem;
         line-height: 1.8rem;
     }
 }
 
-@media screen and(min-width: 1920px){
-    .logo{
-        margin-left: 22rem;
-    }
-    .download{
-        margin-right: 22rem;
-    }
-}
+@media screen and(min-width: 1920px){}
